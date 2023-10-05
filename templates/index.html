@@ -33,6 +33,27 @@
             margin: auto;
             text-align: center;
         }
+        table {
+            text-align: center; 
+        }
+        .table {
+            margin: 2rem auto;
+            width: auto !important; 
+        }
+        th, td {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+        th {
+            color: #ee720d;
+            font-size: 1.4rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
         h5 {
             font-weight: bold;
             font-family: "Helvetica",sans;
@@ -80,6 +101,52 @@
     <nav class="navbar navbar-light bg-light">
         <span class="navbar-brand mb-0 h1"><h1>Life Expectancy Prediction</h1></span>
     </nav>
+    <table class="table table-stripped table-bordered table-hover">
+        <tr class="table-success">
+            <th class="bg-dark">Feature</th>
+            <th class="bg-dark">Description</th>
+        </tr>
+        <tr>
+            <td class="bg-info">Polio</td>
+            <td class="bg-info">Polio (Pol3) immunization coverage among 1-year-olds (%)</td>
+        </tr>
+        <tr>
+            <td class="bg-warning">Adult Mortality</td>
+            <td class="bg-warning">Adult Mortality Rates of both sexes (probability of dying between 15 and 60 years per 1000 population)</td>
+        </tr>
+        <tr class="table-danger">
+            <td class="bg-primary">BMI</td>
+            <td class="bg-primary">Average Body Mass Index of entire population</td>
+        </tr>
+        <tr class="table-warning">
+            <td class="bg-success">Diphtheria</td>
+            <td class="bg-success">Diphtheria tetanus toxoid and pertussis (DTP3) immunization coverage among 1-year-olds (%)</td>
+        </tr>
+        <tr class="table-secondary">
+            <td class="bg-danger">HIV/AIDS</td>
+            <td class="bg-danger">Deaths per 1 000 live births HIV/AIDS (0-4 years)</td>
+        </tr>
+        <tr class="table-success">
+            <td class="bg-info">Schooling</td>
+            <td class="bg-info">Number of years of Schooling(years)</td>
+        </tr>
+        <tr class="table-info">
+            <td class="bg-dark">Income Composition of Resources</td>
+            <td class="bg-dark">Human Development Index in terms of income composition of resources (index ranging from 0 to 1)</td>
+        </tr>
+        <tr class="table-light">
+            <td class="bg-primary">Thinness (5-9 Years)</td>
+            <td class="bg-primary">Prevalence of thinness among children having age between 5 and 9 years(%)</td>
+        </tr>
+        <tr class="table-dark">
+            <td class="bg-warning">Under-Five Deaths</td>
+            <td class="bg-warning">Number of under-five deaths per 1000 population</td>
+        </tr>
+        <tr class="table-active">
+            <td class="bg-success">Alcohol</td>
+            <td class="bg-success">Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol)</td>
+        </tr>
+    </table>
     <div class="container">
         <form action="/predict" method="post">
             <div class="row first_row">
