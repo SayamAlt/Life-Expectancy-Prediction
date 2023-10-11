@@ -25,7 +25,8 @@ jobs:
       run: |
         docker build -t life_expectancy_predictor:latest .
         docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-        docker push life_expectancy_predictor:latest
+        docker tag life_expectancy_predictor:latest sayam2801/life_expectancy_predictor:latest
+        docker push sayam2801/life_expectancy_predictor:latest
 
     - name: Deploy to Render
       run: |
